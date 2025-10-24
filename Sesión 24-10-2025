@@ -1,0 +1,146 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace _2025_2026_DAM_1A_ED_Sintaxis
+{
+    public partial class Form1 : Form
+    {
+
+        private int contador = 0;
+        public Form1()
+        {
+            InitializeComponent();
+            /*
+            // SINTAXIS
+
+            // Variables enteras.            
+            int numerosGenerales = 1;
+            long numerosLargos = 1;
+            short numerosCortos = 1;
+            
+            // Se pueden inicializar en líneas separadas.
+            int numeroSeparado;
+            numeroSeparado = 1;
+
+            // Variables reales.
+            float numerosDecimales = 1.1f;
+            double numeroDecimalGrande = 1.1;
+
+            // Variables de tipo char, para letras o carácteres. Cualquier carácter dentro del ASCII.
+            char caracter = '%';
+            // Está orientado a poner un único carácter entre comillas simples. Si se usan dobles, se le trata como texto (string).
+            // char caracterInvalido = 'AB'; // Esto daría error.
+            // char caracterInvalido2 = "A"; // Esto también daría error.
+
+            // Variables lógicas, o booleanas.
+            bool logica = true;
+            bool logicaFalsa = false;
+
+            // Variables de texto, o strings.
+            // Las variables primitivas se escriben con minúscula. Mientras que las complejas son con mayúscula.
+            String textoJava = "Java";
+            // Únicamente en C# se usará la palabra reservada string en minúscula.
+            string textoCSharp = "CSharp";
+
+            // Conversiones.
+            string numeroFormatoTexto = "123";
+            int numeroFormatoNumero;
+            numeroFormatoNumero = numeroFormatoTexto;
+            // La línea anterior da error, ya que no se pueden convertir tipos de datos diferentes de forma implícita.
+            numeroFormatoNumero = Convert.ToInt32(numeroFormatoTexto);
+            // El 32 en ToInt32 indica que se convierte a un entero de 32 bits (int).
+
+            float x = 1.1f;
+            int y;
+            //y = x;
+            // La línea anterior daría error, ya que no se pueden convertir tipos de datos diferentes.
+
+            // Para convertir de float a int, se puede usar un casting explícito. (Conversión a la fuerza).
+            y = (int)x;
+
+            // Operadores aritméticos.
+            float suma = x + y;
+            float resta = x - y;
+            float multiplicacion = x * y;
+            float division = x / y;
+            float modulo = x % y;
+
+            // Operadores relacionales.
+            bool menor = x < y;
+            bool menorIgual = x <= y;
+            bool mayor = x > y;
+            bool mayorIgual = x >= y;
+            bool igual = x == y;
+            bool diferente = x != y;
+
+            // Operadores lógicos.
+            bool and = igual && igual;
+            bool or = igual || diferente;
+            bool not = !igual;
+
+            // Condicionales
+            if (and == not)
+            {
+                MessageBox.Show("Hola");
+            } else if (and == or)
+            {
+                MessageBox.Show("---");
+            } else
+            {
+                MessageBox.Show("???");
+            }
+
+            switch (numerosGenerales)
+            {
+                case 10:
+                    MessageBox.Show("Diez");
+                    break;
+                case 25:
+                    MessageBox.Show("Veinticinco");
+                    break;
+                case 99:
+                    MessageBox.Show("Noventa y nueve");
+                    break;
+                case 20:
+                case 40:
+                case 60:
+                    MessageBox.Show("Veinte, cuarenta o sesenta");
+                    break;
+                default
+                    messageBox.Show("Otro número");
+                    break
+            }
+
+            // Bucles
+
+            while (igual == igual)
+            {
+                MessageBox.Show("Me repito");
+            }
+
+            do
+            {
+                MessageBox.Show("Me repito otra vez");
+            } while (igual == igual);
+
+            for (int i = 0; i < 10; i++)
+            {
+                MessageBox.Show(Convert.ToString(i);
+            } */
+
+            // ...---...
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
