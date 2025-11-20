@@ -1,0 +1,250 @@
+// Formulario 1
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace SimulacroExamen
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void viajeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ejercicio2 f2 = new Ejercicio2();
+            f2.Show();
+        }
+
+        private void votosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ejercicio3 ejercicio3 = new Ejercicio3();
+            ejercicio3.Show();
+        }
+    }
+}
+
+// Formulario 2
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace SimulacroExamen
+{
+    public partial class Ejercicio2 : Form
+    {
+        public Ejercicio2()
+        {
+            InitializeComponent();
+        }
+
+        private void Ejercicio2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int suma = 0, trasladoHotel = 0, alquilerCoche = 0, excursionGuiada = 0
+            , todoIncluido = 0, soloIda = 0, idaVuelta = 0;
+
+            numericUpDown1.Value = 1;
+            numericUpDown2.Value = 1;
+
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+
+            textBox1.Text = string.Empty;
+            comboBox1.Text = "";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            int suma = 0, trasladoHotel = 0, alquilerCoche = 0, excursionGuiada = 0
+                , todoIncluido = 0, soloIda = 0, idaVuelta = 0;
+
+            int totalDias = (int)numericUpDown1.Value;
+            int totalGente = (int)numericUpDown2.Value;
+
+            if (checkBox1.Checked)
+            {
+                trasladoHotel = 75;
+            }
+
+            if (checkBox2.Checked)
+            {
+                // Por día
+                alquilerCoche = 50;
+            }
+
+            if (checkBox3.Checked)
+            {
+                excursionGuiada = 100;
+            }
+
+            if (checkBox4.Checked)
+            {
+                // Por día
+                todoIncluido = 20;
+            }
+
+            if (radioButton1.Checked)
+            {
+                soloIda = 300;
+            } else if (radioButton2.Checked)
+            {
+                idaVuelta = 550;
+            }
+
+            suma = trasladoHotel + (alquilerCoche * totalDias) + excursionGuiada + (todoIncluido * totalDias) + soloIda + idaVuelta;
+            textBox1.Text = "El total es: " + suma + ".";
+
+            pictureBox1.Visible = true;
+            button3.Visible = true;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.ReadOnly = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button3.Visible = false;
+        }
+    }
+}
+
+// Formulario 3
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace SimulacroExamen
+{
+    public partial class Ejercicio3 : Form
+    {
+        public Ejercicio3()
+        {
+            InitializeComponent();
+        }
+
+        int Candidato1, Candidato2, VotoBlanco, contadorVotos, totalVotos;
+
+        private void bReiniciar_Click(object sender, EventArgs e)
+        {
+            int Candidato1 = 0, Candidato2 = 0, VotoBlanco = 0, contadorVotos = 0, totalVotos = 0;
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+        }
+
+        private void bCandidato1_Click(object sender, EventArgs e)
+        {
+            Candidato1 ++;
+            contadorVotos ++;
+            textBox1.Text = contadorVotos.ToString();
+        }
+
+
+
+        private void bCandidato2_Click(object sender, EventArgs e)
+        {
+            Candidato2 ++;
+            contadorVotos++;
+            textBox1.Text = contadorVotos.ToString();
+        }
+        private void bVotoBlanco_Click(object sender, EventArgs e)
+        {
+            VotoBlanco ++;
+            contadorVotos++;
+            textBox1.Text = contadorVotos.ToString();
+        }
+        private void bResultado_Click(object sender, EventArgs e)
+        {
+            if (contadorVotos < 24)
+            {
+                textBox2.Text = "Faltan alumnos por votar.";
+            } else
+            {
+                textBox2.Text = "Candidato 1: " + Candidato1 + "Candidato 2: " + Candidato2 + "Votos en Blanco: " + VotoBlanco;
+            }
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }       
+
+    }
+}
