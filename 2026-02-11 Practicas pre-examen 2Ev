@@ -1,0 +1,136 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace practica2Ev
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        char[] lista = new char[10];
+        int aux = 0;
+
+        String[] moñaco = new String[10];
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '0';
+                moñaco[aux] = "A";
+                aux++;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '1';
+                moñaco[aux] = "E";
+                aux++;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '2';
+                moñaco[aux] = "I";
+                aux++;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '3';
+                moñaco[aux] = "O";
+                aux++;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '4';
+                moñaco[aux] = "U";
+                aux++;
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '5';
+                moñaco[aux] = "B";
+                aux++;
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '6';
+                moñaco[aux] = "Y";
+                aux++;
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '7';
+                moñaco[aux] = "M";
+                aux++;
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '8';
+                moñaco[aux] = "C";
+                aux++;
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (aux < lista.Length)
+            {
+                lista[aux] = '9';
+                moñaco[aux] = "H";
+                aux++;
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            label1.Text = "";
+            label2.Text = "";
+
+            for (int i = 0; i < lista.Length; i++)
+            {
+                label1.Text += lista[i] + " ";
+                label2.Text += moñaco[i] + " ";
+            }
+        }
+    }
+}
