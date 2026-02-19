@@ -1,0 +1,10 @@
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\bin\Debug\simulacroSegundaEV.exe.config
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\bin\Debug\simulacroSegundaEV.exe
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\bin\Debug\simulacroSegundaEV.pdb
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\obj\Debug\simulacroSegundaEV.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\obj\Debug\simulacroSegundaEV.Form1.resources
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\obj\Debug\simulacroSegundaEV.Properties.Resources.resources
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\obj\Debug\simulacroSegundaEV.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\obj\Debug\simulacroSegundaEV.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\obj\Debug\simulacroSegundaEV.exe
+C:\Users\Usuario\source\repos\simulacroSegundaEV\simulacroSegundaEV\obj\Debug\simulacroSegundaEV.pdb
